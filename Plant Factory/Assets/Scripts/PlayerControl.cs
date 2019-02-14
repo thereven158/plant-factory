@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        //Player Movement
+        //Player Movement using arrow
         PlayerMove(speed);
 
         //Left Player Move
@@ -57,6 +57,7 @@ public class PlayerControl : MonoBehaviour {
         rb.velocity = new Vector3 (speed, rb.velocity.y, 0);
     }
 
+    //Player movement using button
     public void WalkLeft ()
     {
         speed = -speedX;
