@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour
 
     public HealthBar healthBar;
     private HealthSystem healthSystem = new HealthSystem(100);
-    private int currentHp = 100;
+    private SMask sMask;
 
     //lighting tilemap
     public Tilemap DarkMap;
@@ -24,6 +24,7 @@ public class GameHandler : MonoBehaviour
     void Start()
     {
         healthBar.Setup(healthSystem);
+        sMask = FindObjectOfType<SMask>();
 
         //lighting tilemap
         DarkMap.origin = BlurredMap.origin = Background.origin;
@@ -48,15 +49,15 @@ public class GameHandler : MonoBehaviour
         {
             nextReduceHp = Time.time + reduceHpRate;
 
-            if (currentHp > 0)
+            if (healthSystem.GetHealth() > 0)
             {
-                currentHp -= 1;
                 healthSystem.Damaged(1);
+                sMask.ReducePersec();
+                
             }
 
-            if (currentHp == 0)
+            if (healthSystem.GetHealth() == 0)
             {
-                currentHp = 100;
                 healthSystem.Heal(100);
             }
         }

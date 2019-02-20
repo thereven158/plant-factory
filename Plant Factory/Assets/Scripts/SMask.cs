@@ -15,6 +15,14 @@ public class SMask : MonoBehaviour
 
     private float timer;
     private bool bigger;
+    
+    //Reduce vision/sec
+    public float reduceRate = 1f;
+    float nextReduce = 0.0f;
+
+    private void Start()
+    {
+    }
 
     // Update is called once per frame
     void Update()
@@ -41,8 +49,11 @@ public class SMask : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position, target.position, 20 * Time.deltaTime);
+
+        
     }
 
+    //add vision when button + pressed
     public void AddVision ()
     {
         transform.localScale = new Vector3(transform.localScale.x + 0.1f,
@@ -50,10 +61,36 @@ public class SMask : MonoBehaviour
                                            transform.localScale.z);
     }
 
+    //reduce vision when button - pressed
     public void ReduceVision()
     {
         transform.localScale = new Vector3(transform.localScale.x - 0.1f,
                                            transform.localScale.y - 0.1f,
                                            transform.localScale.z);
+    }
+
+    public void ReducePersec()
+    {
+        transform.localScale = new Vector3(transform.localScale.x - 0.01f,
+                                           transform.localScale.y - 0.01f,
+                                           transform.localScale.z);
+
+        /*//reduce vision every second
+        if (Time.time > nextReduce)
+        {
+            nextReduce = Time.time + reduceRate;
+
+            if (transform.localScale.x > 0f)
+            {
+                
+            }
+
+            if (transform.localScale.x < 0f)
+            {
+                transform.localScale = new Vector3(transform.localScale.x + 1f,
+                                           transform.localScale.y + 1f,
+                                           transform.localScale.z);
+            }
+        }*/
     }
 }
