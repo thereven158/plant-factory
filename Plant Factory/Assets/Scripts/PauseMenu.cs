@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-
+    
     public void CheckPaused ()
     {
         if (GameIsPaused)

@@ -74,23 +74,5 @@ public class SMask : MonoBehaviour
         transform.localScale = new Vector3(transform.localScale.x - 0.01f,
                                            transform.localScale.y - 0.01f,
                                            transform.localScale.z);
-
-        /*//reduce vision every second
-        if (Time.time > nextReduce)
-        {
-            nextReduce = Time.time + reduceRate;
-
-            if (transform.localScale.x > 0f)
-            {
-                
-            }
-
-            if (transform.localScale.x < 0f)
-            {
-                transform.localScale = new Vector3(transform.localScale.x + 1f,
-                                           transform.localScale.y + 1f,
-                                           transform.localScale.z);
-            }
-        }*/
     }
 }
