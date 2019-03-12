@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pausedUI;
 
-
+    //public SceneFader fader;
 
     // Update is called once per frame
     void Update()
@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        //fader.FadeToLevel(SceneManager.GetActiveScene().buildIndex + 0);
         Resume();
     }
 

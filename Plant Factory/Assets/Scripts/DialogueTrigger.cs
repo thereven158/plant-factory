@@ -11,4 +11,13 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
+
+    void OnTriggerEnter2D(Collider2D player)
+    {
+        if (player.tag == "Player")
+        {
+            Debug.Log("Enter Trigger Dialogue");
+            TriggerDialogue();
+        }
+    }
 }

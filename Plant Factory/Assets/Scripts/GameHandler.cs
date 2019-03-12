@@ -13,6 +13,8 @@ public class GameHandler : MonoBehaviour
     private HealthSystem healthSystem = new HealthSystem(100);
     private SMask sMask;
 
+    public float energy;
+
     //lighting tilemap
     public Tilemap DarkMap;
     public Tilemap BlurredMap;
