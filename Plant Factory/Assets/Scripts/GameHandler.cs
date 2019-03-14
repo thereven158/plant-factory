@@ -9,8 +9,21 @@ public class GameHandler : MonoBehaviour
     public float reduceHpRate = 1f;
     float nextReduceHp = 0.0f;
 
+    //Healing Area
+    private float healHpRate = 1f;
+    float nextHealHp = 0.0f;
+
     public HealthBar healthBar;
     private HealthSystem healthSystem = new HealthSystem(100);
+
+
+    //Counter Plus/Minus Button
+    public int counter = 0;
+    double additionalDamage;
+
+    bool playerTrigger = false;
+
+    //SMask
     private SMask sMask;
 
     //energy
@@ -51,6 +64,13 @@ public class GameHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CounterVisionButton();
+
+        if (Input.GetKeyDown(KeyCode.KeypadEnter)) WinStage();
+    }
+
+    public void ReduceHpPerSec(double addDamage)
+    {
         //reduce HP every second
         if (Time.time > nextReduceHp)
         {
@@ -58,18 +78,36 @@ public class GameHandler : MonoBehaviour
 
             if (healthSystem.GetHealth() > 0)
             {
-                healthSystem.Damaged(1);
-                sMask.ReducePersec();
-                
+                healthSystem.Damaged(addDamage);
+                //sMask.ReducePersec();
+                //Debug.Log("hp " + healthSystem.GetHealth());
             }
 
             if (healthSystem.GetHealth() == 0)
             {
+                sMask.OutofHealth();
+            }
+        }
+    }
+
+    public void HealingArea()
+    {
+        //reduce HP every second
+        if (Time.time > nextHealHp)
+        {
+            nextHealHp = Time.time + healHpRate;
+
+            if (healthSystem.GetHealth() < 100)
+            {
+                healthSystem.Heal(10);
+                //Debug.Log("hp " + healthSystem.GetHealth());
+            }
+
+            if (healthSystem.GetHealth() > 100)
+            {
                 healthSystem.Heal(100);
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.KeypadEnter)) WinStage();
     }
 
     public void WinStage()
@@ -78,4 +116,23 @@ public class GameHandler : MonoBehaviour
         PlayerPrefs.SetInt("stageReached", levelToUnlock);
         sceneFader.FadeToLevel(levelToUnlock);
     }
+
+    public void CounterVisionButton()
+    {
+        if (counter < -4) additionalDamage = 0.5;
+        if (counter < -3) additionalDamage = 0.6;
+        if (counter < -2) additionalDamage = 0.7;
+        if (counter < -1) additionalDamage = 0.8;
+        if (counter < 0) additionalDamage = 0.9;
+        if (counter == 0) additionalDamage = 1;
+        if (counter > 1) additionalDamage = 2;
+        if (counter > 3) additionalDamage = 3;
+        if (counter > 6) additionalDamage = 4;
+        if (counter > 9) additionalDamage = 5;
+
+        ReduceHpPerSec(additionalDamage);
+        //Debug.Log("Counter" + counter);
+        //Debug.Log("GetDamaged" + additionalDamage);
+    }
+
 }

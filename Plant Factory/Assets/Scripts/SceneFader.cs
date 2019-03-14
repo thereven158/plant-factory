@@ -5,9 +5,6 @@ public class SceneFader : MonoBehaviour
 {
     public Animator anim;
 
-    //TESTING
-    public GameHandler gM;
-
     private int levelToLoad;
 
     /*

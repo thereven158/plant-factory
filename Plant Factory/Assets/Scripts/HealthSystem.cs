@@ -1,33 +1,33 @@
 ﻿
 public class HealthSystem
 {
-    private int health;
-    private int healthMax;
+    private double health;
+    private double healthMax;
 
-    public HealthSystem (int healthMax)
+    public HealthSystem (double healthMax)
     {
         this.healthMax = healthMax;
         health = healthMax;
 
     }
 
-    public int GetHealth ()
+    public double GetHealth ()
     {
         return health;
     }
 
     public float GetHealthPercent ()
     {
-        return (float)health / healthMax;
+        return (float)health / (float)healthMax;
     }
 
-    public void Heal (int healAmount)
+    public void Heal (double healAmount)
     {
         health += healAmount;
         if (health > healthMax) health = healthMax;
     }
 
-    public void Damaged (int damageAmount)
+    public void Damaged (double damageAmount)
     {
         health -= damageAmount;
         if (health < 0) health = 0;
