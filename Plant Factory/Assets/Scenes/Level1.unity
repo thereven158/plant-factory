@@ -421,6 +421,8 @@ MonoBehaviour:
   reduceHpRate: 1
   healthBar: {fileID: 759926206}
   energy: 0
+  levelToUnlock: 2
+  sceneFader: {fileID: 829996598}
   DarkMap: {fileID: 2113172934}
   BlurredMap: {fileID: 435400518}
   Background: {fileID: 742356523}
@@ -2203,7 +2205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausedUI: {fileID: 2130774758}
-  fader: {fileID: 829996598}
 --- !u!1 &644767963
 GameObject:
   m_ObjectHideFlags: 0

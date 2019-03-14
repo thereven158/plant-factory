@@ -13,7 +13,12 @@ public class GameHandler : MonoBehaviour
     private HealthSystem healthSystem = new HealthSystem(100);
     private SMask sMask;
 
+    //energy
     public float energy;
+
+    //next Level
+    public int levelToUnlock = 2;
+    public SceneFader sceneFader;
 
     //lighting tilemap
     public Tilemap DarkMap;
@@ -63,5 +68,14 @@ public class GameHandler : MonoBehaviour
                 healthSystem.Heal(100);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.KeypadEnter)) WinStage();
+    }
+
+    public void WinStage()
+    {
+        Debug.Log("Win Level");
+        PlayerPrefs.SetInt("stageReached", levelToUnlock);
+        sceneFader.FadeToLevel(levelToUnlock);
     }
 }

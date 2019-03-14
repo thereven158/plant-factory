@@ -14,8 +14,8 @@ public class LevelSelector : MonoBehaviour
 
     private void Start()
     {
-        int stageReached = PlayerPrefs.GetInt("stageReach", 1);
-        int levelReached = PlayerPrefs.GetInt("levelReach", 1);
+        int stageReached = PlayerPrefs.GetInt("stageReached", 1);
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
 
         for (int i = 0; i < lightLevelButtons.Length; i++)
         {

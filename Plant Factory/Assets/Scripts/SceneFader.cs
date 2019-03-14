@@ -5,9 +5,12 @@ public class SceneFader : MonoBehaviour
 {
     public Animator anim;
 
+    //TESTING
+    public GameHandler gM;
+
     private int levelToLoad;
 
-    // Update is called once per frame
+    /*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.KeypadEnter))
@@ -18,6 +21,7 @@ public class SceneFader : MonoBehaviour
     {
         FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    */
 
     public void FadeToLevel (int levelIndex)
     {
