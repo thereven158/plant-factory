@@ -22,6 +22,7 @@ public class GameHandler : MonoBehaviour
     double additionalDamage;
 
     bool playerTrigger = false;
+    public bool outOfHealth = false;
 
     //SMask
     private SMask sMask;
@@ -78,6 +79,7 @@ public class GameHandler : MonoBehaviour
 
             if (healthSystem.GetHealth() > 0)
             {
+                outOfHealth = false;
                 healthSystem.Damaged(addDamage);
                 //sMask.ReducePersec();
                 //Debug.Log("hp " + healthSystem.GetHealth());
@@ -85,6 +87,7 @@ public class GameHandler : MonoBehaviour
 
             if (healthSystem.GetHealth() == 0)
             {
+                outOfHealth = true;
                 sMask.OutofHealth();
             }
         }

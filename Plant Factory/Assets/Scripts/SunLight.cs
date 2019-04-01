@@ -5,8 +5,16 @@ using UnityEngine;
 public class SunLight : MonoBehaviour
 {
     public GameHandler gM;
-    
+    public AudioClip audioClip;
+    AudioSource audioSource;
+
+    public float volume;
     bool entered = false;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -18,6 +26,7 @@ public class SunLight : MonoBehaviour
         if (player.tag == "Player")
         {
             entered = true;
+            audioSource.PlayOneShot(audioClip, volume);
         }
     }
 
@@ -26,6 +35,7 @@ public class SunLight : MonoBehaviour
         if (player.tag == "Player")
         {
             entered = false;
+            audioSource.Stop();
 
             Debug.Log("Exit trigger");
         }
