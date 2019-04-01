@@ -9,10 +9,13 @@ public class PlayerControl : MonoBehaviour {
     bool facingRight, jumping;
     float speed;
 
+    AudioSource audioSource;
+    
     Rigidbody2D rb;
 
      private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         facingRight = true;
         jumping = false;
@@ -48,6 +51,7 @@ public class PlayerControl : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             jumping = true;
+            audioSource.Play();
             rb.AddForce(new Vector2(rb.velocity.x, jumpSpeed));
         }
     }
@@ -75,6 +79,8 @@ public class PlayerControl : MonoBehaviour {
 
     public void Jumping ()
     {
+        audioSource.Play();
         rb.AddForce(new Vector2(rb.velocity.x, jumpSpeed));
     }
+    
 }

@@ -59,37 +59,44 @@ public class SMask : MonoBehaviour
     //add vision when button + pressed
     public void AddVision ()
     {
-        if (gameHandler.counter == 10)
+        if (gameHandler.outOfHealth == false)
         {
-            gameHandler.counter = 10;
-            Debug.Log("Maxed zoom out");
+            if (gameHandler.counter == 10)
+            {
+                gameHandler.counter = 10;
+                Debug.Log("Maxed zoom out");
+            }
+            if (gameHandler.counter <= 10)
+            {
+                gameHandler.counter += 1;
+                transform.localScale = new Vector3(transform.localScale.x + 0.1f,
+                                               transform.localScale.y + 0.1f,
+                                               transform.localScale.z);
+            }
         }
-        if (gameHandler.counter <= 10)
-        {
-            gameHandler.counter += 1;
-            transform.localScale = new Vector3(transform.localScale.x + 0.1f,
-                                           transform.localScale.y + 0.1f,
-                                           transform.localScale.z);
-        }
-        
+               
     }
 
     //reduce vision when button - pressed
     public void ReduceVision()
     {
-        if (gameHandler.counter == -5)
+        if (gameHandler.outOfHealth == false)
         {
-            gameHandler.counter = -5;
-            Debug.Log("Maxed zoom in");
-        }
+            if (gameHandler.counter == -5)
+            {
+                gameHandler.counter = -5;
+                Debug.Log("Maxed zoom in");
+            }
 
-        if (gameHandler.counter >= -5)
-        {
-            gameHandler.counter -= 1;
-            transform.localScale = new Vector3(transform.localScale.x - 0.1f,
-                                               transform.localScale.y - 0.1f,
-                                               transform.localScale.z);
+            if (gameHandler.counter >= -5)
+            {
+                gameHandler.counter -= 1;
+                transform.localScale = new Vector3(transform.localScale.x - 0.1f,
+                                                   transform.localScale.y - 0.1f,
+                                                   transform.localScale.z);
+            }
         }
+        
             
     }
 
