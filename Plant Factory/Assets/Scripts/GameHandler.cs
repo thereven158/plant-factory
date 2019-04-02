@@ -88,6 +88,7 @@ public class GameHandler : MonoBehaviour
             if (healthSystem.GetHealth() == 0)
             {
                 outOfHealth = true;
+                counter = 0;
                 sMask.OutofHealth();
             }
         }
@@ -95,6 +96,8 @@ public class GameHandler : MonoBehaviour
 
     public void HealingArea()
     {
+        counter = 0;
+        sMask.NoOutofHealth();
         //reduce HP every second
         if (Time.time > nextHealHp)
         {
