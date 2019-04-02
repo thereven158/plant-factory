@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
 
     public Dialogue dialogue;
+    public QuestManager qManager;
 
     public void TriggerDialogue()
     {
@@ -17,6 +18,7 @@ public class DialogueTrigger : MonoBehaviour
         if (player.tag == "Player")
         {
             Debug.Log("Enter Trigger Dialogue");
+            qManager.DisplayNextQuest();
             TriggerDialogue();
         }
     }
