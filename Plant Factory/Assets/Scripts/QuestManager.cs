@@ -18,11 +18,6 @@ public class QuestManager : MonoBehaviour
         questBox = GameObject.Find("QuestBox");
     }
 
-    void Update()
-    {
-        Debug.Log("Quest Count : " + sentences.Count);
-    }
-
     public void StartQuest(Quest quest)
     {
         Debug.Log("Start conversation");
