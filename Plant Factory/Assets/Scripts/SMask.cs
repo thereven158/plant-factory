@@ -111,4 +111,9 @@ public class SMask : MonoBehaviour
     {
         transform.localScale = new Vector3(0.3f, 0.3f, 0);
     }
+
+    public void NoOutofHealth()
+    {
+        transform.localScale = new Vector3(1f, 1f, 0);
+    }
 }

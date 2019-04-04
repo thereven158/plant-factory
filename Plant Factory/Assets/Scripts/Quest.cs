@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Dialogue
+public class Quest
 {
     [TextArea(3, 10)]
     public string[] sentences;
