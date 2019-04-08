@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.13, y: -11.16}
-  m_SizeDelta: {x: 460.54, y: 286.93}
+  m_AnchoredPosition: {x: -0.13, y: -20.9}
+  m_SizeDelta: {x: 460.54, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50179151
 MonoBehaviour:
@@ -183,11 +183,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Reaksi fotofosforilasi siklik\n\nReaksi yang hanya melibatkan satu fotosistem,
-    yaitu fotosistem I \n\nEnergi cahaya, yang dihasilkan oleh matahari, membuat elektron-elektron
-    di P1 menjadi aktif dan terjadi perpindahan energi foton dari klorofil A dan terjadi
-    fotofosforilasi.\n\nFotofosforilasi adalah peristiwa bereaksinya senyawa ADP dan
-    asam fosfat menjadi ATP."
+  m_Text: 'Reaksi Non-Siklik
+
+
+    reaksi dua tahap yang melibatkan dua fotosistem klorofil yang berbeda.
+
+
+    Mula-mula, molekul air diurai menjadi 2H+ + 1/2O2 + 2e-. Dua elektron dari molekul
+    air tersimpan di fotosistem II, sementara ion H+ akan digunakan pada reaksi yang
+    lain dan O2 akan dilepaskan ke udara bebas.
+
+
+    Setelah itu mereka bergerak lagi ke rantai transpor elektron, yang membawa mereka
+    ke Fotosistem I
+
+'
 --- !u!222 &50179152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2158,11 +2168,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '???: Hei, kau pasti foton.'
-    - 'Foton: Ada apa ? dan siapa kamu ?'
-    - 'ADP: aku ADP. Aku butuh bantuanmu. Bisakah kamu mengumpulkan elektron, saat
-      ini aku sedang tidak bisa bergerak dan membutuhkan elektron untuk bergerak.'
-    - 'Foton: Baiklah, aku akan segera mencarinya.'
+    - '???: Hai Foton, aku H2O butuh bantuan mu untuk mencari energi elektron yang
+      tersebar di Fotosistem 2.'
+    - 'Foton: Berasal dari mana energi elektron tersebut ?'
+    - 'H2O: Dari hasil penguraian Air (H2O) akan menghasilkan H2+, 1/2 O2 dan 2 elektron.'
+    - 'H2O: Setelah itu pergi ke Fotosistem I untuk bertemu dengan NADP+.'
+    - 'Foton: Baiklah, aku faham.'
   qManager: {fileID: 1536562549}
 --- !u!61 &484660636
 BoxCollider2D:
@@ -104689,8 +104700,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Foton: Sepertinya aku sudah sampai di klorofil. '
-    - 'Foton: Saatnya diriku beraksi mengumpulkan energi.'
+    - 'Foton: Aku harus menuju fotosistem 2 untuk mengumpulkan energi dari hasil penguraian
+      H2O.'
 --- !u!4 &1007989697
 Transform:
   m_ObjectHideFlags: 0
@@ -112145,9 +112156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest:
     sentences:
-    - Pergi ke area A untuk bertemu dengan ADP.
-    - Mencari 6 energi yang tersebar di area klorofil.
-    - Kembali ke ADP untuk memberi energi yang telah terkumpul.
+    - Pergi ke area Fotosistem 2 untuk bertemu dengan Air.
+    - Mencari 6 energi yang tersebar di area Fotosistem 2
+    - Pergi ke Fotosistem I untuk bertemu dengan NADP+.
 --- !u!114 &1466712548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113102,6 +113113,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704974628}
   m_CullTransparentMesh: 0
+--- !u!1 &1708537279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708537281}
+  - component: {fileID: 1708537280}
+  - component: {fileID: 1708537283}
+  - component: {fileID: 1708537282}
+  m_Layer: 0
+  m_Name: Winhere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1708537280
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708537279}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 52aeb31d18c02834ab90755967ce3fc0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1708537281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708537279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.236, y: -41.394, z: -0.234375}
+  m_LocalScale: {x: 6.743184, y: 4.849242, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708537282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708537279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830f25005e8c2f94fa7410671e4d9b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  win: {fileID: 1560694331}
+--- !u!61 &1708537283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708537279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1714912904
 GameObject:
   m_ObjectHideFlags: 0
