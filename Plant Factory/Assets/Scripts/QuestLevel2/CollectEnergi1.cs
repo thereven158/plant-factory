@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectSun1 : MonoBehaviour
+public class CollectEnergi1 : MonoBehaviour
 {
     int counter = 0;
     private string curAmount;
     public Text amount;
 
     GameObject getText;
-    GameObject adp;
+    GameObject h2o;
     public QuestManager qManager;
 
     void Start()
     {
-        adp = GameObject.Find("adp");
+        h2o = GameObject.Find("h2o");
     }
     
     private void OnTriggerEnter2D(Collider2D player)
@@ -36,7 +36,7 @@ public class CollectSun1 : MonoBehaviour
         {
             Debug.Log("yeay");
             qManager.DisplayNextQuest();
-            adp.GetComponent<DialogueSecondMeetAdp>().enabled = true;
+            h2o.GetComponent<DialogueSecondMeetAdp>().enabled = true;
         }
     }
 }

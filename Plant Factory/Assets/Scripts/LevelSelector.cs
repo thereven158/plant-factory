@@ -14,18 +14,22 @@ public class LevelSelector : MonoBehaviour
 
     private void Start()
     {
-        int stageReached = PlayerPrefs.GetInt("stageReached", 1);
+        int lightStageReached = PlayerPrefs.GetInt("lightStageReached", 1);
+        int darkStageReached = PlayerPrefs.GetInt("darkStageReached", 1);
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
 
         for (int i = 0; i < lightLevelButtons.Length; i++)
         {
-            if (i + 1 > stageReached)
+            if (i + 1 > lightStageReached)
                 lightLevelButtons[i].interactable = false;
+            if(lightStageReached == 4)
+                PlayerPrefs.SetInt("levelReached", 2);
         }
 
         for (int i = 0; i < darkLevelButtons.Length; i++)
         {
-            darkLevelButtons[i].interactable = false;
+            if (i + 1 > darkStageReached)
+                darkLevelButtons[i].interactable = false;
         }
 
         for (int i = 0; i < levelSelect.Length; i++)

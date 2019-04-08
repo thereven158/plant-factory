@@ -31,7 +31,8 @@ public class GameHandler : MonoBehaviour
     public float energy;
 
     //next Level
-    public int levelToUnlock = 2;
+    public int levelToUnlock;
+    public int levelUnlockDark;
     public SceneFader sceneFader;
 
     //lighting tilemap
@@ -119,7 +120,8 @@ public class GameHandler : MonoBehaviour
     public void WinStage()
     {
         Debug.Log("Win Level");
-        PlayerPrefs.SetInt("stageReached", levelToUnlock);
+        PlayerPrefs.SetInt("lightStageReached", levelToUnlock);
+        PlayerPrefs.SetInt("darkStageReached", levelUnlockDark);
         sceneFader.FadeToLevel(levelToUnlock);
     }
 

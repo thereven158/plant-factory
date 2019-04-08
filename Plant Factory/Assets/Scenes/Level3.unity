@@ -324,7 +324,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reduceHpRate: 1
   healthBar: {fileID: 759926206}
+  counter: 0
+  outOfHealth: 0
   energy: 0
+  levelToUnlock: 4
+  levelUnlockDark: 1
+  sceneFader: {fileID: 295993839}
   DarkMap: {fileID: 2113172934}
   BlurredMap: {fileID: 435400518}
   Background: {fileID: 742356523}
@@ -1133,6 +1138,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed6e10eb8008280479bc79fa3fb9ba05, type: 3}
+--- !u!114 &295993839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8361144518525005917, guid: ed6e10eb8008280479bc79fa3fb9ba05,
+    type: 3}
+  m_PrefabInstance: {fileID: 295993838}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8245fe32c492c4597c30bee22d710c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &326383661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1839,7 @@ MonoBehaviour:
     - 'Foton: Secepatnya ?'
     - '2H+: Karna energi tersebut dapat diambil oleh foton jahat.'
     - 'Foton: Baiklah.'
+  qManager: {fileID: 0}
 --- !u!61 &484660636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2186,7 +2204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c8d7eb60511654fb12a68a86876a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneFader: {fileID: 0}
   pausedUI: {fileID: 2130774758}
+  levelToUnlock: 0
 --- !u!1 &644767963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2291,7 @@ MonoBehaviour:
   addSize: 0.031
   target: {fileID: 1448675230}
   reduceRate: 1
+  gameHandler: {fileID: 0}
 --- !u!1 &742356520
 GameObject:
   m_ObjectHideFlags: 0

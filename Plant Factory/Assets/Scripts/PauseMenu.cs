@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public SceneFader sceneFader;
 
     public GameObject pausedUI;
+    public int levelToUnlock;
 
     //public SceneFader fader;
 
@@ -64,5 +66,13 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
         Resume();
+    }
+
+    public void Secret()
+    {
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        PlayerPrefs.SetInt("lightStageReached", levelToUnlock);
+        sceneFader.FadeToLevel(levelToUnlock);
     }
 }

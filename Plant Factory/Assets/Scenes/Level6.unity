@@ -421,8 +421,10 @@ MonoBehaviour:
   reduceHpRate: 1
   healthBar: {fileID: 759926206}
   counter: 0
+  outOfHealth: 0
   energy: 0
-  levelToUnlock: 2
+  levelToUnlock: 7
+  levelUnlockDark: 4
   sceneFader: {fileID: 829996598}
   DarkMap: {fileID: 2113172934}
   BlurredMap: {fileID: 435400518}
@@ -15797,6 +15799,7 @@ MonoBehaviour:
     - 'ADP: aku ADP. Aku butuh bantuanmu. Bisakah kamu mengumpulkan energi, saat ini
       aku sedang tidak bisa bergerak dan membutuhkan energi untuk bergerak.'
     - 'Foton: Baiklah, aku akan segera mencarinya.'
+  qManager: {fileID: 0}
 --- !u!61 &484660636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16161,7 +16164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c8d7eb60511654fb12a68a86876a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneFader: {fileID: 0}
   pausedUI: {fileID: 2130774758}
+  levelToUnlock: 0
 --- !u!1 &644767963
 GameObject:
   m_ObjectHideFlags: 0
@@ -119953,6 +119958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gM: {fileID: 130714968}
+  audioClip: {fileID: 0}
+  volume: 0
 --- !u!1 &1882436125
 GameObject:
   m_ObjectHideFlags: 0
