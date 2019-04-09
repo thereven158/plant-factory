@@ -1,38 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DialogueFirstMeetAdp : MonoBehaviour
+public class DialogueMeetAdp: MonoBehaviour
 {
-
     public Dialogue dialogue;
-    public QuestManager qManager;
 
+    GameObject getText;
     GameObject adp;
+    public Win win;
 
     void Start()
     {
         adp = GameObject.Find("adp");
+        getText = GameObject.Find("CurrentAmount");
     }
 
-    public void TriggerDialogue()
+     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
     void OnTriggerEnter2D(Collider2D player)
     {
-        if (!gameObject.GetComponent<DialogueFirstMeetAdp>().enabled)
-        {
-            return;
-        }
-
         if (player.tag == "Player")
         {
-            Debug.Log("Enter Trigger Dialogue");
-            qManager.DisplayNextQuest();
             TriggerDialogue();
-            adp.GetComponent<DialogueFirstMeetAdp>().enabled = false;
+            win.WinStage();
         }
     }
 }
