@@ -424,6 +424,7 @@ MonoBehaviour:
   outOfHealth: 0
   energy: 0
   levelToUnlock: 8
+  levelUnlockDark: 5
   sceneFader: {fileID: 829996598}
   DarkMap: {fileID: 2113172934}
   BlurredMap: {fileID: 435400518}

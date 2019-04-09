@@ -502,7 +502,7 @@ MonoBehaviour:
   counter: 0
   outOfHealth: 0
   energy: 0
-  levelToUnlock: 2
+  levelToUnlock: 4
   levelUnlockDark: 0
   sceneFader: {fileID: 829996598}
   DarkMap: {fileID: 2113172934}
@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 829996598}
   pausedUI: {fileID: 2130774758}
-  levelToUnlock: 2
+  levelToUnlock: 4
 --- !u!1 &644767963
 GameObject:
   m_ObjectHideFlags: 0
@@ -114517,7 +114517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winUI: {fileID: 1560694327}
   sceneFader: {fileID: 829996598}
-  levelToUnlock: 3
+  levelToUnlock: 4
 --- !u!1 &1571652659
 GameObject:
   m_ObjectHideFlags: 0

@@ -86,11 +86,13 @@ public class PlayerControl : MonoBehaviour {
     public void WalkLeft ()
     {
         speed = -speedX;
+        facingRight = false;
     }
 
     public void WalkRight()
     {
         speed = speedX;
+        facingRight = true;
     }
 
     public void StopMoving ()
