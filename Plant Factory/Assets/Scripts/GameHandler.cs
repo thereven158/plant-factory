@@ -127,16 +127,16 @@ public class GameHandler : MonoBehaviour
 
     public void CounterVisionButton()
     {
-        if (counter < -4) additionalDamage = 0.5;
-        if (counter < -3) additionalDamage = 0.6;
-        if (counter < -2) additionalDamage = 0.7;
-        if (counter < -1) additionalDamage = 0.8;
-        if (counter < 0) additionalDamage = 0.9;
-        if (counter == 0) additionalDamage = 1;
-        if (counter > 1) additionalDamage = 2;
-        if (counter > 3) additionalDamage = 3;
-        if (counter > 6) additionalDamage = 4;
-        if (counter > 9) additionalDamage = 5;
+        if (counter < -4) additionalDamage = 0.16;
+        if (counter < -3) additionalDamage = 0.2;
+        if (counter < -2) additionalDamage = 0.23;
+        if (counter < -1) additionalDamage = 0.26;
+        if (counter < 0) additionalDamage = 0.3;
+        if (counter == 0) additionalDamage = 0.3;
+        if (counter > 1) additionalDamage = 0.6;
+        if (counter > 3) additionalDamage = 1;
+        if (counter > 6) additionalDamage = 1.3;
+        if (counter > 9) additionalDamage = 1.6;
 
         ReduceHpPerSec(additionalDamage);
         //Debug.Log("Counter" + counter);

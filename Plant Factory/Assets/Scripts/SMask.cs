@@ -51,6 +51,7 @@ public class SMask : MonoBehaviour
             bigger = !bigger;
         }
 
+        if(target!=null)
         transform.position = Vector3.MoveTowards(transform.position, target.position, 20 * Time.deltaTime);
 
         

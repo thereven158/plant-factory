@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectSun1 : MonoBehaviour
+public class CollectSun3 : MonoBehaviour
 {
-    int counter = 0;
+    int counter;
     private string curAmount;
     public Text amount;
 
-    public GameObject quizMenu1;
+    public GameObject quizMenu3;
     GameObject getText;
     GameObject adp;
     public QuestManager qManager;
@@ -21,9 +21,13 @@ public class CollectSun1 : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D player)
     {
+        getText = GameObject.Find("CurrentAmount");
+        curAmount = getText.GetComponent<Text>().text;
+        counter = int.Parse(curAmount);
+
         if (player.tag == "Player")
         {
-            quizMenu1.SetActive(true);
+            quizMenu3.SetActive(true);
         }
 
         if (counter == 5)
