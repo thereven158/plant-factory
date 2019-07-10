@@ -8,13 +8,11 @@ public class DialogueFirstMeetH2o : MonoBehaviour
     public Dialogue dialogue;
     public QuestManager qManager;
 
-    GameObject h2o, collectUI;
+    GameObject h2o;
 
     void Start()
     {
         h2o = GameObject.Find("h2o");
-        collectUI = GameObject.Find("CollectEnergy");
-        collectUI.SetActive(false);
     }
 
     public void TriggerDialogue()
@@ -34,7 +32,6 @@ public class DialogueFirstMeetH2o : MonoBehaviour
             Debug.Log("Enter Trigger Dialogue");
             qManager.DisplayNextQuest();
             TriggerDialogue();
-            collectUI.SetActive(true);
             h2o.GetComponent<DialogueFirstMeetH2o>().enabled = false;
         }
     }

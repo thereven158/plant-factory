@@ -9,6 +9,7 @@ public class Win : MonoBehaviour
 
     public SceneFader sceneFader;
     public int levelToUnlock;
+    public int levelUnlockDark;
 
     public void WinStage()
     {
@@ -20,7 +21,8 @@ public class Win : MonoBehaviour
     {
         winUI.SetActive(false);
         PlayerPrefs.SetInt("lightStageReached", levelToUnlock);
-                   
+        PlayerPrefs.SetInt("darkStageReached", levelUnlockDark);
+
         sceneFader.FadeToLevel(levelToUnlock);
     }
 
