@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: {fileID: 868120617}
   quizMenu2: {fileID: 991577220}
-  qManager: {fileID: 0}
+  qManager: {fileID: 1536562549}
 --- !u!1001 &389774984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2723,9 +2723,11 @@ MonoBehaviour:
     sentences:
     - '???: Hei, kau pasti foton.'
     - 'Foton: Ada apa ? dan siapa kamu ?'
-    - 'ADP: aku ADP. Aku butuh bantuanmu. Bisakah kamu mengumpulkan elektron, saat
-      ini aku sedang tidak bisa bergerak dan membutuhkan elektron untuk bergerak.'
-    - 'ADP: Aku harus berubah menjadi ATP secepat mungkin.'
+    - 'ADP: aku ADP disebut juga Adenosine Difosfat.'
+    - 'ADP: Aku butuh bantuanmu. Bisakah kamu mengumpulkan elektron, saat ini aku
+      sedang tidak bisa bergerak dan membutuhkan elektron untuk bergerak.'
+    - 'ADP: Aku harus berubah menjadi ATP yang disebut juga Adenosine Trifosfat secepat
+      mungkin.'
     - 'Foton: Dimana aku dapat mengumpulkan elektron tersebut.'
     - 'ADP: Kita sekarang sedang berada di Photosistem 1. Kamu bisa mendapatkannya
       di daerah pedalaman Photosistem 1. Kamu dapat berjalan kearah kanan untuk mencarinya.'
@@ -2771,9 +2773,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 1
-    - 2
-  win: {fileID: 1560694331}
+    - 'Adp: Terima kasih telah mengantarkan energi kepada ku, Foton. '
+    - 'Adp: Lihatlah perubahan diriku menjadi ATP, .'
+    - 'Foton: Woaaaaah, sekarang kamu lebih bersinar dari yang sebelumnya.'
+    - 'ATP: Proses ini dinamakan fotofosforilasi, yaitu pembentukan ADP menjadi ATP
+      dengan menggunakan energi matahari.'
 --- !u!95 &484660638
 Animator:
   serializedVersion: 3
@@ -107560,7 +107564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: {fileID: 868120617}
   quizMenu3: {fileID: 302820217}
-  qManager: {fileID: 0}
+  qManager: {fileID: 1536562549}
 --- !u!58 &1147125730
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107817,6 +107821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1310262495}
   dialogueBox: {fileID: 192876651}
+  win: {fileID: 1560694331}
+  lastDialog: 0
 --- !u!4 &1185978389
 Transform:
   m_ObjectHideFlags: 0
@@ -110810,6 +110816,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: -1, y: -13, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 0, y: -13, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 1, y: -13, z: 0}
     second:
       m_TileIndex: 2
@@ -110895,24 +110919,6 @@ Tilemap:
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: -1, y: -12, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 0, y: -12, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -111287,6 +111293,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 17, y: -8, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 18, y: -8, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 22, y: -8, z: 0}
     second:
       m_TileIndex: 2
@@ -111309,24 +111333,6 @@ Tilemap:
     second:
       m_TileIndex: 3
       m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 17, y: -7, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 18, y: -7, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -113222,6 +113228,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 31, y: 9, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 32, y: 9, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 33, y: 9, z: 0}
     second:
       m_TileIndex: 1
@@ -114810,7 +114834,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 45139a7aa72a56946b1908616e199b69, type: 2}
-  - m_RefCount: 272
+  - m_RefCount: 274
     m_Data: {fileID: 11400000, guid: 61b60f6f0cd8b7048bf1bc83aafac24b, type: 2}
   - m_RefCount: 132
     m_Data: {fileID: 11400000, guid: bba6162b81aade44d992c8bbfa1b3f40, type: 2}
@@ -114837,7 +114861,7 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 13
     m_Data: {fileID: 21300000, guid: 1b0dd83e32e6b6e48bfa4813df91c3fa, type: 3}
-  - m_RefCount: 272
+  - m_RefCount: 274
     m_Data: {fileID: 21300002, guid: 1b0dd83e32e6b6e48bfa4813df91c3fa, type: 3}
   - m_RefCount: 132
     m_Data: {fileID: 21300010, guid: 1b0dd83e32e6b6e48bfa4813df91c3fa, type: 3}
@@ -114862,7 +114886,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 21300012, guid: 1b0dd83e32e6b6e48bfa4813df91c3fa, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 737
+  - m_RefCount: 739
     m_Data:
       e00: 1
       e01: 0
@@ -114881,7 +114905,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 737
+  - m_RefCount: 739
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122943,7 +122967,7 @@ MonoBehaviour:
   quest:
     sentences:
     - Pergi ke area A untuk bertemu dengan ADP.
-    - Mencari 6 energi yang tersebar di area klorofil.
+    - Mencari 5 energi yang tersebar di area klorofil.
     - Kembali ke ADP untuk memberi energi yang telah terkumpul.
 --- !u!114 &1466712548
 MonoBehaviour:
@@ -127201,7 +127225,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 73f49348f4a1bda4b914fd994702fb4a, type: 3}
   m_Color: {r: 1, g: 0.9972117, b: 0, a: 1}
   m_FlipX: 0

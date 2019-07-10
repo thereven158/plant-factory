@@ -11,6 +11,10 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public GameObject dialogueBox;
 
+    public Win win;
+
+    public bool lastDialog = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +43,10 @@ public class DialogueManager : MonoBehaviour
     {
         if(sentences.Count == 0)
         {
+            if (lastDialog)
+            {
+                Win();
+            }
             EndDialogue();
             return;
         }
@@ -65,5 +73,10 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End Conversation");
         dialogueBox.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void Win()
+    {
+        win.WinStage();
     }
 }

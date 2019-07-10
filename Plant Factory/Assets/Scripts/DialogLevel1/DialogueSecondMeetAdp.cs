@@ -9,7 +9,7 @@ public class DialogueSecondMeetAdp: MonoBehaviour
 
     GameObject getText;
     GameObject adp;
-    public Win win;
+    //public Win win;
 
     void Start()
     {
@@ -33,7 +33,8 @@ public class DialogueSecondMeetAdp: MonoBehaviour
         if (player.tag == "Player")
         {
             TriggerDialogue();
-            win.WinStage();
+            FindObjectOfType<DialogueManager>().lastDialog = true;
+            //win.WinStage();
         }
     }
 }

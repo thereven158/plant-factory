@@ -28,13 +28,10 @@ public class CollectSun3 : MonoBehaviour
         if (player.tag == "Player")
         {
             quizMenu3.SetActive(true);
+            Debug.Log(counter);
         }
 
-        if (counter == 5)
-        {
-            qManager.DisplayNextQuest();
-            adp.GetComponent<DialogueSecondMeetAdp>().enabled = true;
-        }
+        
     }
 
     public void DestroyThis()
@@ -50,5 +47,11 @@ public class CollectSun3 : MonoBehaviour
 
         counter++;
         amount.text = counter + "";
+
+        if (counter == 5)
+        {
+            qManager.DisplayNextQuest();
+            adp.GetComponent<DialogueSecondMeetAdp>().enabled = true;
+        }
     }
 }

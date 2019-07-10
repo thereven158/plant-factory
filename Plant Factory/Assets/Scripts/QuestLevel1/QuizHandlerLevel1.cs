@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuizHandler : MonoBehaviour
+public class QuizHandlerLevel1 : MonoBehaviour
 {
 
     //Collect1
