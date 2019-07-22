@@ -147,7 +147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: -7.49971}
+  m_AnchoredPosition: {x: -0.5, y: -7.4997654}
   m_SizeDelta: {x: 439.24, y: 230.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50179151
@@ -497,7 +497,7 @@ MonoBehaviour:
   outOfHealth: 0
   energy: 0
   levelToUnlock: 4
-  levelUnlockDark: 1
+  levelUnlockDark: 2
   sceneFader: {fileID: 829996598}
   DarkMap: {fileID: 2113172934}
   BlurredMap: {fileID: 435400518}
@@ -104252,7 +104252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.1, y: -40.79989}
+  m_AnchoredPosition: {x: -23.1, y: -40.80015}
   m_SizeDelta: {x: 98.77, y: 25.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933236417
@@ -105280,7 +105280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.6, y: -40.799576}
+  m_AnchoredPosition: {x: 24.6, y: -40.799664}
   m_SizeDelta: {x: 98.77, y: 25.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058287038
@@ -121063,7 +121063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1560694328
 RectTransform:
   m_ObjectHideFlags: 0

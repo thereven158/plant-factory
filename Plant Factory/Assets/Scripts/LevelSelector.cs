@@ -43,4 +43,11 @@ public class LevelSelector : MonoBehaviour
     {
         fader.FadeToLevel(levelIndex);
     }
+
+    public void ResetLevel ()
+    {
+        int lightStageReached = PlayerPrefs.GetInt("lightStageReached", 1);
+        int darkStageReached = PlayerPrefs.GetInt("darkStageReached", 1);
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+    }
 }

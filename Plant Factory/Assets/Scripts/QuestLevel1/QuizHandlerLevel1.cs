@@ -36,37 +36,37 @@ public class QuizHandlerLevel1 : MonoBehaviour
 
     public void Correct1()
     {
-        quizMenu1.SetActive(false);
+        //quizMenu1.SetActive(false);
         colSun1.CollectPlus();
         colSun1.DestroyThis();
     }
 
     public void Wrong1()
     {
-        quizMenu1.SetActive(false);
+        //quizMenu1.SetActive(false);
     }
 
     public void Correct2()
     {
-        quizMenu2.SetActive(false);
+        //quizMenu2.SetActive(false);
         colSun2.CollectPlus();
         colSun2.DestroyThis();
     }
 
     public void Wrong2()
     {
-        quizMenu2.SetActive(false);
+        //quizMenu2.SetActive(false);
     }
 
     public void Correct3()
     {
-        quizMenu3.SetActive(false);
+        //quizMenu3.SetActive(false);
         colSun3.CollectPlus();
         colSun3.DestroyThis();
     }
 
     public void Wrong3()
     {
-        quizMenu3.SetActive(false);
+        //quizMenu3.SetActive(false);
     }
 }

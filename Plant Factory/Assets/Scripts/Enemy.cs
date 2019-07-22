@@ -43,4 +43,14 @@ public class Enemy : MonoBehaviour
         enemyVelocity.x = -enemyTrans.right.x * speed;
         enemyRb.velocity = enemyVelocity;
     }
+
+    private void OnTriggerEnter2D(Collider2D playerTag)
+    {
+
+        if (playerTag.tag == "Player")
+        {
+            Destroy(gameObject);
+
+        }
+    }
 }
