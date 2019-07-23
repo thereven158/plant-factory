@@ -9,7 +9,11 @@ public class Enemy : MonoBehaviour
     Rigidbody2D enemyRb;
     Transform enemyTrans;
     float enemyWidth, enemyHeight;
-    
+    int random;
+    public GameObject quizMenu1;
+    public GameObject quizMenu2;
+    public GameObject quizMenu3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,11 +50,28 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D playerTag)
     {
-
+        
         if (playerTag.tag == "Player")
         {
-            Destroy(gameObject);
-
+            Debug.Log("Kena");
+            random = Random.Range(1, 3);
+            if(random == 1)
+            {
+                quizMenu1.SetActive(true);
+            }
+            if(random == 2)
+            {
+                quizMenu2.SetActive(true);
+            }
+            if (random == 3)
+            {
+                quizMenu3.SetActive(true);
+            }
         }
+    }
+
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject);
     }
 }
