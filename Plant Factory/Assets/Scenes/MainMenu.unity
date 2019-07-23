@@ -620,7 +620,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 4
+      value: Reduksi 2
       objectReference: {fileID: 0}
     - target: {fileID: 5634338699676379810, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -1042,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 3
+      value: Reduksi 1
       objectReference: {fileID: 0}
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -1852,7 +1852,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 3
+      value: Reduksi 1
       objectReference: {fileID: 0}
     - target: {fileID: 5634338699676379810, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -2317,7 +2317,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 4
+      value: Reduksi 2
       objectReference: {fileID: 0}
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -3697,7 +3697,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -3783,12 +3783,12 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 1
+      value: Reaksi Terang Siklik
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.6
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -3977,7 +3977,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -4037,7 +4037,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 2
+      value: Reaksi Terang Non-Siklik 1
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -4073,7 +4073,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.8
+      value: 7.3
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -4359,7 +4359,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 2
+      value: Fiksasi Karbon 2
       objectReference: {fileID: 0}
     - target: {fileID: 5634338699676379810, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -5786,7 +5786,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 5
+      value: Regenerasi
       objectReference: {fileID: 0}
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -6171,7 +6171,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Reaksi fotofosforilasi siklik
+  m_Text: 'Reaksi Terak Siklik
 
 '
 --- !u!222 &940673866
@@ -6216,7 +6216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.7999878, y: -1.4}
+  m_AnchoredPosition: {x: -0.7999878, y: -1.3999939}
   m_SizeDelta: {x: -78.3, y: -90.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944066411
@@ -6382,7 +6382,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 1
+      value: Fiksasi Karbon 1
       objectReference: {fileID: 0}
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -6901,7 +6901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1046813884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7198,10 +7198,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -7209,7 +7209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Reaksi fotofosforilasi non-Siklik
+  m_Text: 'Reaksi Terang non-Siklik 1
 
 '
 --- !u!222 &1056682290
@@ -7429,7 +7429,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 5
+      value: Regenerasi
       objectReference: {fileID: 0}
     - target: {fileID: 5634338699676379810, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -8469,8 +8469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.7999878, y: -9.300003}
-  m_SizeDelta: {x: -78.3, y: -74.7}
+  m_AnchoredPosition: {x: -0.7999878, y: -9.31}
+  m_SizeDelta: {x: -78.3, y: -74.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370497562
 MonoBehaviour:
@@ -8494,21 +8494,24 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Reaksi yang hanya melibatkan satu fotosistem, yaitu fotosistem I \r\n\r\nEnergi
-    cahaya, yang dihasilkan oleh matahari, membuat elektron-elektron di P1 menjadi
-    aktif dan terjadi perpindahan energi foton dari klorofil A dan terjadi fotofosforilasi.\r\n\r\nFotofosforilasi
-    adalah peristiwa bereaksinya senyawa ADP dan asam fosfat menjadi ATP."
+  m_Text: "Reaksi yang hanya melibatkan satu fotosistem, yaitu fotosistem I (P1).\nEnergi
+    cahaya matahari / foton yang diserap oleh klorofil, membuat elektron-elektron
+    di P1 menjadi aktif dan akan ditangkap oleh akseptor elektron. Dan P1 mengalami
+    kekurangan elektron sehingga tidak dapat berfungsi.\nElektron tersebut kembali
+    lagi ke P1 dan terjadi perpindahan energi dari elektron pada sistem transpor elektron
+    dan terjadi fotofosforilasi.\r\nFotofosforilasi adalah peristiwa bereaksinya senyawa
+    ADP dan asam fosfat menjadi ATP."
 --- !u!222 &1370497563
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9196,7 +9199,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9256,7 +9259,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 3
+      value: Reaksi Terang Non-Siklik 2
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9292,7 +9295,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.2
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9513,7 +9516,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 2
+      value: Fiksasi Karbon 2
       objectReference: {fileID: 0}
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -9878,7 +9881,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -125
+      value: -138.93
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9888,7 +9891,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9938,7 +9941,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 3
+      value: Reaksi Terang Non-Siklik 2
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -9969,7 +9972,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.8
+      value: 9.3
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -10070,7 +10073,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: -14.95
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -10080,7 +10083,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -10130,7 +10133,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 2
+      value: Reaksi Terang Non-Siklik 1
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -10161,7 +10164,7 @@ PrefabInstance:
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.27
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -12121,7 +12124,7 @@ PrefabInstance:
     - target: {fileID: 5634338700263751310, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 1
+      value: Fiksasi Karbon 1
       objectReference: {fileID: 0}
     - target: {fileID: 5634338699676379810, guid: be831ab928759ab4c9fc10f903cd99b7,
         type: 3}
@@ -12261,7 +12264,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 125
+      value: 110.75
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -12271,7 +12274,7 @@ PrefabInstance:
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7819006050797571316, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
@@ -12342,12 +12345,12 @@ PrefabInstance:
     - target: {fileID: 7819006052018817809, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_Text
-      value: Tahap 1
+      value: Reaksi Terang Siklik
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.99
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 7819006052018817808, guid: 38b3db7f7f4cdde47a0dffa01c38134f,
         type: 3}
