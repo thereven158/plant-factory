@@ -18,14 +18,14 @@ public class QuizHandlerLevel1 : MonoBehaviour
     //Collect3
     public GameObject quizMenu3;
     public GameObject sun3;
-    CollectSun3 colSun3;
+    CollectSun3Lvl2 colSun3;
 
     // Start is called before the first frame update
     void Start()
     {
         colSun1 = sun1.GetComponent<CollectSun1>();
         colSun2 = sun2.GetComponent<CollectSun2>();
-        colSun3 = sun3.GetComponent<CollectSun3>();
+        colSun3 = sun3.GetComponent<CollectSun3Lvl2>();
     }
 
     // Update is called once per frame

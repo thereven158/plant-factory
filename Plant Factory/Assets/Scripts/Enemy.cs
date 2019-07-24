@@ -67,7 +67,9 @@ public class Enemy : MonoBehaviour
             {
                 quizMenu3.SetActive(true);
             }
+            DestroyEnemy();
         }
+        
     }
 
     public void DestroyEnemy()

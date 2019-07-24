@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!114 &1692760080676419276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +120,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   speed: 2
+  quizMenu1: {fileID: 0}
+  quizMenu2: {fileID: 0}
+  quizMenu3: {fileID: 0}
 --- !u!82 &1692760080676419277
 AudioSource:
   m_ObjectHideFlags: 0
@@ -226,9 +229,9 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03308356, y: -0.031364817}
+  m_Offset: {x: 0.018555697, y: 0.08494582}
   serializedVersion: 2
-  m_Radius: 1.6772417
+  m_Radius: 1.6050264
